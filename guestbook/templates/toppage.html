@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>방명록입니다.</title>
+    </head>
+
+    <body>
+        {% for post in posts %}
+            <div>
+                <span>{{ post.username }}</span>
+                <span>{{ post.created_at }}</span>
+                <div>
+                    {{ post.content }}
+                </div>
+            </div>
+        {% endfor %}
+    </body>
+</html>
+
