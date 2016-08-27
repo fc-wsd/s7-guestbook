@@ -1,3 +1,9 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+
+def toppage(request):
+    text = 'hello world'
+    response = HttpResponse(text)
+    return response
+
